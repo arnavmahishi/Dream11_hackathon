@@ -1,0 +1,76 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{array}
+\geometry{margin=1in}
+
+\title{\textbf{Strategy Document for Dream11 AI Team Selection}}
+\author{\textbf{Institute Name: IIT Hyderabad} \\ Team Name: ML Mavericks}
+\date{February 1, 2025}
+
+\begin{document}
+\maketitle
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Name & ID No. & Degree Type & Department & Starting Year \\
+        \hline
+        Arnav Mahishi (Captain) & ee24btech11006 & B.Tech & Electrical & 2024 \\
+        \hline
+        Eshan Ray & ee24btech11021 & B.Tech & Electrical & 2024\\
+        \hline
+        Dhwanith M & ee24btech11016 & B.Tech & Electrical & 2024\\
+        \hline
+        Arnav Yadnopavit & ee24btech11007 & B.Tech & Electrical & 2024 \\
+        \hline
+        Dwarak A & ee24btech11019 & B.Tech & Electrical & 2024\\
+        \hline
+        Bhavanishankar GS & ee24btech11012 & B.Tech & Electrical & 2024\\
+        \hline
+        Balaji B & ee24btech11010 & B.Tech & Electrical & 2024 \\
+        \hline
+    \end{tabular}
+    \caption{Team Member Details}
+    \label{tab:team_members}
+\end{table}
+ 
+\section{Introduction}
+Our team's vision is to build a sophisticated AI/ML approach model for choosing a team in a multisport league fantasy competition using historical data, current match situational factors, and ML techniques to maximize fantasy points in the ICC Champions Trophy 2025. We are excited about the prospect of using AI in cricket as it not only helps to make our fantasy team, but it could also help cricket teams in the future to strategize based on AI model predictions.
+
+\section{Objective}
+-Identify expectations,procedure and central issues for fantasy team construction.\\
+-Construct a selection algorithm based on previous stats and specific player matchups using machine learning.\\
+-Modify according to the venue,the conditions on that day and player form that are observed in real time.
+
+\section{Data Sources}
+- \href{https://stats.espncricinfo.com}{Cricinfo Stats Repository} (Historical player performance and match stats)\\
+- \href{https://cricsheet.org}{Cricsheet Data} (Ball-by-ball detailed performance records)\\
+- Real-time match data: Toss results, pitch reports, weather updates, venue-specific trends.\\
+-\href{https://github.com/outside-edge/python-espncricinfo}{python-espncricinfo python module}\\
+- Crex- a cricket analytics app providing live scores, match insights, fantasy team suggestions, and in-depth player statistics. 
+
+\section{Approach to Building a Team}
+\subsection{Key Steps}
+- \textbf{Data Collection and Webscraping:} Gather historical player statistics, match data, and real-time updates.\\
+- \textbf{Preprocessing:} Clean and normalize data, handling missing values and inconsistencies.\\
+- \textbf{Select Paramters to Optimize:} Extract relevant features such as form, consistency, and opponent-based performance.\\
+- \textbf{Model Selection:} Train machine learning models using Logistic Regression, K-Nearest Neighbors Logistic Regression,Random Forest Regression, or Gradient Boosting Machines for player performance prediction.\\
+-\textbf{Points System} Optimize the formula for a points system for each player which shows us which players are more likely to perform will in the particular match which also is based on intuition and experience fantasy players have.\\
+- \textbf{Optimization:} Apply constraint-based optimization techniques to maximize fantasy points and team constraints.\\
+- \textbf{Real-Time Adjustments:} Update team selection dynamically based on tournament form, toss outcomes, playing XI announcements, and last-minute pitch/weather conditions.
+
+\section{Risks and Assumptions}
+- Data availability and accuracy from third-party sources\\
+- Changes in player form or injuries that impact real-time decisions.\\
+- Assumption that the squads don't chnage\\
+- The impact of unpredictable match conditions on model predictions.
+
+\section{Conclusion}
+Our strategy addresses the selection of the optimal set of layers for maximum fantasy points scored over the course of the tournament by using AI/ML techniques together with a dynamic selection approach. To improve the accuracy of decision-making within the model, it will be trained and updated real-time using the data inputs.
+
+
+
+\end{document}
