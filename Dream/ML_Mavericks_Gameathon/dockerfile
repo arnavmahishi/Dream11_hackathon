@@ -1,0 +1,18 @@
+# Use official Python image
+FROM python:3.9
+
+# Set working directory inside container
+WORKDIR /app
+
+# Copy the application files
+COPY app/ /app/
+
+# Copy the data files
+COPY data/ /app/data/
+
+# Install dependencies
+RUN pip install -r requirements.txt
+
+# Set the command to run the script
+CMD ["python", "model9.py"]
+
